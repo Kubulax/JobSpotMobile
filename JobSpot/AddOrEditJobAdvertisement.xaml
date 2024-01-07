@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JobSpot.AddOrEditJobAdvertisement"
+             BackgroundColor="Gray"
+             Title="Dodaj ogłoszenie">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="10">
+                <Label Margin="0,50,0,0" HorizontalOptions="Center" FontFamily="arial" FontSize="20" Text="(Pogrubione pola są wymagane)"/>
+
+                <Grid Margin="10,50,10,10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Label Text="Nazwa firmy:" FontSize="15" HorizontalOptions="Start" VerticalOptions="Center" Margin="10" FontAttributes="Bold" Grid.Row="0" />
+                    <Entry x:Name="Entry_CompanyName" Grid.Row="0" Margin="150,5,10,5" FontSize="15" VerticalOptions="Center" Background="LightGray"/>
+
+                    <Label Text="Nazwa stanowiska:" FontSize="15" HorizontalOptions="Start" VerticalOptions="Center" Margin="10" FontAttributes="Bold" Grid.Row="1"/>
+                    <Entry x:Name="Entry_PositionName" Grid.Row="1" Margin="150,5,10,5" FontSize="15" VerticalOptions="Center" Background="LightGray"/>
+
+                    <Label Text="Kategoria:" FontSize="15" HorizontalOptions="Start" VerticalOptions="Center" Margin="10" FontAttributes="Bold" Grid.Row="2"/>
+                    <Picker x:Name="Picker_Category" Grid.Row="2" Margin="150,5,10,5" FontSize="15" VerticalOptions="Center" Background="LightGray">
+                        <Picker.Items>
+                            <x:String>Administracja biurowa</x:String>
+                            <x:String>Badania i rozwój</x:String>
+                            <x:String>Bankowość</x:String>
+                            <x:String>BHP</x:String>
+                            <x:String>Budownictwo</x:String>
+                            <x:String>Call Center</x:String>
+                            <x:String>Doradztwo / Konsulting</x:String>
+                            <x:String>Energetyka</x:String>
+                            <x:String>Edukacja / Szkolenia</x:String>
+                            <x:String>Finanse / Ekonomia</x:String>
+                            <x:String>Hotelarstwo</x:String>
+                            <x:String>IT</x:String>
+                            <x:String>Reklama</x:String>
+                            <x:String>Sektor Publiczny</x:String>
+                            <x:String>Praca Fizyczna</x:String>
+                            <x:String>Inna</x:String>
+                        </Picker.Items>
+                    </Picker>
+
+                    <Label Text="Wynagrodzenie:" FontSize="15" HorizontalOptions="Start" VerticalOptions="Center" Margin="10" FontAttributes="Bold" Grid.Row="3"/>
+                    <Entry x:Name="Entry_Pay" Grid.Row="3" Margin="150,5,10,5" FontSize="15" VerticalOptions="Center" Background="LightGray"/>
+
+                    <Label Text="Lokalizacja:" FontSize="15" HorizontalOptions="Start" VerticalOptions="Center" Margin="10" FontAttributes="Bold" Grid.Row="4"/>
+                    <Entry x:Name="Entry_Localization" Grid.Row="4" Margin="150,5,10,5" FontSize="15" VerticalOptions="Center" Background="LightGray"/>
+
+                    <Label Text="Poziom stanowiska:" FontSize="15" HorizontalOptions="Start" VerticalOptions="Center" Margin="10" FontAttributes="Bold" Grid.Row="5"/>
+                    <Picker x:Name="Picker_PositionLevel" Grid.Row="5" Margin="150,5,10,5" FontSize="15" VerticalOptions="Center" Background="LightGray">
+                        <Picker.Items>
+                            <x:String>Praktykant/Stażysta</x:String>
+                            <x:String>Asystent</x:String>
+                            <x:String>Młodszy Specjalista</x:String>
+                            <x:String>Specjalista</x:String>
+                            <x:String>Starszy Specjalista</x:String>
+                            <x:String>Ekspert</x:String>
+                            <x:String>Kierownik/Koordynator</x:String>
+                            <x:String>Menedżer</x:String>
+                            <x:String>Dyrektor</x:String>
+                            <x:String>Prezes</x:String>
+                        </Picker.Items>
+                    </Picker>
+
+                    <Label Text="Rodzaj umowy:" FontSize="15" HorizontalOptions="Start" VerticalOptions="Center" Margin="10" FontAttributes="Bold" Grid.Row="6"/>
+                    <Picker x:Name="Picker_ContractType" Grid.Row="6" Margin="150,5,10,5" FontSize="15" VerticalOptions="Center" Background="LightGray">
+                        <Picker.Items>
+                            <x:String>O pracę</x:String>
+                            <x:String>O dzieło</x:String>
+                            <x:String>Zlecenie</x:String>
+                            <x:String>B2B</x:String>
+                            <x:String>Zastępstwo</x:String>
+                            <x:String>Staż/Praktyka</x:String>
+                        </Picker.Items>
+                    </Picker>
+
+                    <Label Text="Wymiar etatu:" FontSize="15" HorizontalOptions="Start" VerticalOptions="Center" Margin="10" FontAttributes="Bold" Grid.Row="7"/>
+                    <Picker x:Name="Picker_EmploymenType" Grid.Row="7" Margin="150,5,10,5" FontSize="15" VerticalOptions="Center" Background="LightGray">
+                        <Picker.Items>
+                            <x:String>Część etatu</x:String>
+                            <x:String>Cały etat</x:String>
+                            <x:String>Dodatkowa/Tymczasowa</x:String>
+                        </Picker.Items>
+                    </Picker>
+
+                    <Label Text="Tryb pracy:" FontSize="15" HorizontalOptions="Start" VerticalOptions="Center" Margin="10" FontAttributes="Bold" Grid.Row="8"/>
+                    <Picker x:Name="Picker_WorkType" Grid.Row="8" Margin="150,5,10,5" FontSize="15" VerticalOptions="Center" Background="LightGray">
+                        <Picker.Items>
+                            <x:String>Stacjonarna</x:String>
+                            <x:String>Hybrydowa</x:String>
+                            <x:String>Zdalna</x:String>
+                        </Picker.Items>
+                    </Picker>
+
+                    <Label Text="Obowiązki:" FontSize="15" HorizontalOptions="Start" VerticalOptions="Center" Margin="10" Grid.Row="9"/>
+                    <Editor x:Name="Editor_Duties" Grid.Row="10" Margin="10,5,10,5" FontSize="15" VerticalOptions="Start" HeightRequest="100" Background="LightGray"/>
+
+                    <Label Text="Wymagania:" FontSize="15" HorizontalOptions="Start" VerticalOptions="Center" Margin="10" Grid.Row="11"/>
+                    <Editor x:Name="Editor_Requirements" Grid.Row="12" Margin="10,5,10,5" HeightRequest="100" FontSize="15" VerticalOptions="Start" Background="LightGray"/>
+
+                    <Label Text="Korzyści:" FontSize="15" HorizontalOptions="Start" VerticalOptions="Center" Margin="10" Grid.Row="13"/>
+                    <Editor x:Name="Editor_Benefits" Grid.Row="14" Margin="10,5,10,5" HeightRequest="100" FontSize="15" VerticalOptions="Start" Background="LightGray"/>
+
+                    <Label Text="Ogłoszenie ważne do:" FontSize="15" HorizontalOptions="Start" VerticalOptions="Center" Margin="10" Grid.Row="15"/>
+                    <DatePicker x:Name="DatePicker_RecrutationEnd" Grid.Row="15" Margin="180,5,10,5" FontSize="15" HorizontalOptions="Center" VerticalOptions="Center" Background="LightGray"/>
+
+                    <Button Clicked="ClearAllFieds" Text="CZYŚĆ" FontFamily="arial" FontAttributes="Bold,Italic" Background="Lime" FontSize="20" WidthRequest="150" HeightRequest="50" Margin="0,0,0,25" Grid.Row="17" Padding="5" HorizontalOptions="Center"/>
+
+                    <Button x:Name="btn_AddOrEditJobAdvert" Clicked="AddOrEditJobAdvert" FontFamily="arial" FontAttributes="Bold, Italic" BackgroundColor="Lime" FontSize="20" WidthRequest="150" HeightRequest="50" Margin="0,0,0,50" HorizontalOptions="Center" Grid.Row="18"/>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

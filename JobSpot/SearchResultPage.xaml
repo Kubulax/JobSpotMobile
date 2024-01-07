@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JobSpot.SearchResultPage"
+             BackgroundColor="Gray">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="10" BackgroundColor="Transparent">
+                <Label Text="JobSpot" TextColor="Lime" FontSize="50" FontAttributes="Bold, Italic" FontFamily="Arial" HorizontalOptions="Start"/>
+                <ListView x:Name="ListView_JobAdvertisements" BackgroundColor="Gray" RowHeight="300" ItemTapped="GoToTheJobAdWindow">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Frame BorderColor="Lime" Margin="0,10" BackgroundColor="White">
+                                    <StackLayout>
+                                        <Label FontFamily="arial" FontSize="30" FontAttributes="Bold" Text="{Binding CompanyName}" MaxLines="1"/>
+                                        <Label FontFamily="arial" FontSize="30" FontAttributes="Bold" Text="{Binding PositionName}" MaxLines="1"/>
+                                        <Label FontFamily="arial" FontSize="30" FontAttributes="Bold" Text="{Binding WorkType}" MaxLines="1"/>
+                                        <Label FontFamily="arial" FontSize="20" Text="{Binding Category}" MaxLines="1"/>
+                                        <Label FontFamily="arial" FontSize="30" FontAttributes="Bold" Text="{Binding Pay}" MaxLines="1"/>
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label Text="Ważne do: "/>
+                                            <Label Text="{Binding RecrutationEnd, StringFormat=\{0:dd.MM.yyyy\}}" MaxLines="1"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Frame>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JobSpot.RegisterUserPage"
+             Background="Gray">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Rejestracja" FontSize="25" FontAttributes="Italic,Bold" FontFamily="arial" TextColor="Lime" HorizontalOptions="Center" Margin="0,20,0,10"/>
+
+            <Label Text="Login:" FontSize="15" HorizontalOptions="Start" Margin="20,10,0,0"/>
+            <Entry x:Name="Entry_Login" FontSize="15" Placeholder="Login" Margin="20,0,20,0" Background="lightGrey"/>
+
+            <Label Text="Email:" FontSize="15" HorizontalOptions="Start" Margin="20,10,0,0"/>
+            <Entry x:Name="Entry_Email" FontSize="15" Placeholder="Email" Margin="20,0,20,0" Background="lightGrey"/>
+
+            <Label Text="Hasło:" FontSize="15" HorizontalOptions="Start" Margin="20,10,0,0"/>
+            <Entry x:Name="Entry_Password" FontSize="15" Placeholder="Hasło" IsPassword="True" Margin="20,0,20,0" Background="lightGrey"/>
+
+            <Label Text="Powtórz hasło:" FontSize="15" HorizontalOptions="Start" Margin="20,10,0,0"/>
+            <Entry x:Name="Entry_RepeatPassword" FontSize="15" Placeholder="Powtórz hasło" IsPassword="True" Margin="20,0,20,0" Background="lightGrey"/>
+
+            <StackLayout Orientation="Horizontal" Margin="20,0,20,0">
+                <CheckBox x:Name="ChkBox_Agreement" VerticalOptions="Center" Color="lime"/>
+                <Label Text="Akceptuję warunki umowy użytkownika" VerticalOptions="Center" VerticalTextAlignment="Center"/>
+            </StackLayout>
+
+            <Button Clicked="Register" Text="ZAŁÓŻ KONTO" FontFamily="arial" FontAttributes="Italic,Bold" BackgroundColor="Lime" FontSize="20" WidthRequest="150" HeightRequest="50" Margin="0,10,0,0" HorizontalOptions="Center"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

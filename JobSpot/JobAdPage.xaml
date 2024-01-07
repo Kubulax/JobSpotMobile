@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JobSpot.JobAdPage"
+             Background="gray">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Grid Margin="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Text="Nazwa firmy:" FontFamily="arial" TextColor="Lime" FontSize="20" Grid.Row="0" Grid.Column="0" VerticalOptions="Center"/>
+                    <Label Text="{Binding CompanyName}" Grid.Row="0" Grid.Column="1" FontFamily="arial" FontSize="15" VerticalOptions="Center" Margin="0,5,0,0"/>
+
+                    <Label Text="Nazwa stanowiska:" FontFamily="arial" TextColor="Lime" FontSize="20" Grid.Row="1" Grid.Column="0" VerticalOptions="Center"/>
+                    <Label Text="{Binding PositionName}" Grid.Row="1" Grid.Column="1" FontFamily="arial" FontSize="15"  VerticalOptions="Center" Margin="0,5,0,0"/>
+
+                    <Label Text="Kategoria:" FontFamily="arial" TextColor="Lime" FontSize="20" Grid.Row="2" Grid.Column="0" VerticalOptions="Center"/>
+                    <Label Text="{Binding Category}" Grid.Row="2" Grid.Column="1" FontFamily="arial" FontSize="15" VerticalOptions="Center" Margin="0,5,0,0"/>
+
+                    <Label Text="Wynagrodzenie:" FontFamily="arial" TextColor="Lime" FontSize="20" Grid.Row="3" Grid.Column="0" VerticalOptions="Center"/>
+                    <Label Text="{Binding Pay}" Grid.Row="3" Grid.Column="1" FontFamily="arial" FontSize="15" VerticalOptions="Center" Margin="0,5,0,0"/>
+
+                    <Label Text="Lokalizacja:" FontFamily="arial" TextColor="Lime" FontSize="20" Grid.Row="4" Grid.Column="0" VerticalOptions="Center"/>
+                    <Label Text="{Binding Localization}" Grid.Row="4" Grid.Column="1" FontFamily="arial" FontSize="15" VerticalOptions="Center" Margin="0,5,0,0"/>
+
+                    <Label Text="Poziom stanowiska:" FontFamily="arial" TextColor="Lime" FontSize="20" Grid.Row="5" Grid.Column="0" VerticalOptions="Center"/>
+                    <Label Text="{Binding PositionLevel}" Grid.Row="5" Grid.Column="1" FontFamily="arial" FontSize="15" VerticalOptions="Center" Margin="0,5,0,0"/>
+
+                    <Label Text="Rodzaj umowy:" FontFamily="arial" TextColor="Lime" FontSize="20" Grid.Row="6" Grid.Column="0" VerticalOptions="Center"/>
+                    <Label Text="{Binding ContractType}" Grid.Row="6" Grid.Column="1" FontFamily="arial" FontSize="15" VerticalOptions="Center" Margin="0,5,0,0"/>
+
+                    <Label Text="Wymiar etatu:" FontFamily="arial" TextColor="Lime" FontSize="20" Grid.Row="7" Grid.Column="0" VerticalOptions="Center"/>
+                    <Label Text="{Binding EmploymentType}" Grid.Row="7" Grid.Column="1" FontFamily="arial" FontSize="15" VerticalOptions="Center" Margin="0,5,0,0"/>
+
+                    <Label Text="Tryb pracy:" FontFamily="arial" TextColor="Lime" FontSize="20" Grid.Row="8" Grid.Column="0" VerticalOptions="Center"/>
+                    <Label Text="{Binding WorkType}" Grid.Row="8" Grid.Column="1" FontFamily="arial" FontSize="15" VerticalOptions="Center" Margin="0,5,0,0"/>
+
+                    <Label Text="Obowiązki:" FontFamily="arial" TextColor="Lime" FontSize="20" Grid.Row="9" Grid.Column="0" VerticalOptions="Start" Margin="0,40,0,0"/>
+                    <Label Text="{Binding Duties}" Grid.Row="10" FontFamily="arial" FontSize="15" Margin="0,5,0,0"/>
+
+                    <Label Text="Wymagania:" FontFamily="arial" TextColor="Lime" FontSize="20" Grid.Row="11" Grid.Column="0" VerticalOptions="Start" Margin="0,40,0,0"/>
+                    <Label Text="{Binding Requirements}" Grid.Row="12" FontFamily="arial" FontSize="15" Margin="0,5,0,0"/>
+
+                    <Label Text="Korzyści:" FontFamily="arial" TextColor="Lime" FontSize="20" Grid.Row="13" Grid.Column="0" VerticalOptions="Start" Margin="0,40,0,0"/>
+                    <Label Text="{Binding Benefits}" Grid.Row="14" FontFamily="arial" FontSize="15" Margin="0,5,0,0"/>
+
+                    <Label Text="Koniec rekrutacji:" FontFamily="arial" TextColor="Lime" FontSize="20" Grid.Row="15" Grid.Column="0" VerticalOptions="Center" Margin="0,40,0,0"/>
+                    <Label Text="{Binding RecrutationEnd, StringFormat=\{0:dd.MM.yyyy\}}" Grid.Row="15" Grid.Column="1" FontFamily="arial" FontSize="15" VerticalOptions="Center" Margin="0,45,0,0"/>
+                </Grid>
+                <Button x:Name="Btn_EditJobAd" Clicked="EditJobAd" Text="EDYTUJ OGŁOSZENIE" Grid.Row="16" FontFamily="arial" FontAttributes="Bold, Italic" BackgroundColor="Lime" FontSize="20" HeightRequest="50" Padding="5" IsEnabled="False" IsVisible="false" Margin="10,0,0,20" HorizontalOptions="Center"/>
+                <Button x:Name="Btn_DeleteJobAd" Clicked="DeleteJobAd" Text="USUŃ OGŁOSZENIE" Grid.Row="17" FontFamily="arial" FontAttributes="Bold, Italic" BackgroundColor="Lime" FontSize="20" HeightRequest="50" Padding="5" IsEnabled="False" IsVisible="false" Margin="10,0,0,100" HorizontalOptions="Center"/>
+                <Button x:Name="Btn_Apply" Clicked="Apply" Text="APLIKUJ" Grid.Row="18" FontFamily="arial" FontAttributes="Bold, Italic" BackgroundColor="Lime" FontSize="20" HeightRequest="50" Padding="5" Margin="10,0,0,80" HorizontalOptions="Center"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

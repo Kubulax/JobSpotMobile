@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JobSpot.LogInPage"
+             Background="Gray">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Logowanie" FontSize="25" FontAttributes="Italic,Bold" FontFamily="arial" TextColor="Lime" HorizontalOptions="Center" Margin="0,20,0,10"/>
+
+            <Label Text="Login:" FontSize="15" HorizontalOptions="Start" Margin="20,10,0,0"/>
+            <Entry x:Name="Entry_Login" FontSize="15" Placeholder="Login" Margin="20,0,20,0"/>
+
+            <Label Text="Hasło:" FontSize="15" HorizontalOptions="Start" Margin="20,10,0,0"/>
+            <Entry x:Name="Entry_Password" FontSize="15" IsPassword="True" Placeholder="Hasło" Margin="20,0,20,0"/>
+
+            <Button Clicked="LogIn" Text="Zaloguj" FontFamily="arial" FontAttributes="Italic,Bold" BackgroundColor="Lime" FontSize="15" HorizontalOptions="Center" Margin="0,20,0,0" WidthRequest="100"/>
+
+            <Button Clicked="GoToRegisterPage" Text="Załóż konto" FontFamily="arial" FontAttributes="Italic,Bold" BackgroundColor="Lime" FontSize="15" HorizontalOptions="Center" Margin="0,20,0,0" WidthRequest="130"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

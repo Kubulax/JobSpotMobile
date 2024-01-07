@@ -16,7 +16,7 @@ namespace JobSpot
             {
                 if (database == null)
                 {
-                    database = new DataBase(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "jobs.db3"));
+                    database = new DataBase(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "JobSpot.db3"));
                 }
                 return database;
             }

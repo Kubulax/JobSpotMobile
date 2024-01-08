@@ -13,8 +13,8 @@ namespace JobSpot
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SearchResultPage : ContentPage
     {
-        private static List<FilterParam> _filterParams;
-        private static int _userId;
+        private List<FilterParam> _filterParams;
+        private int _userId;
         public SearchResultPage(List<FilterParam> filterParams)
         {
             InitializeComponent();

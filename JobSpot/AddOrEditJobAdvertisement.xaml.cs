@@ -52,7 +52,7 @@ namespace JobSpot
             string positionName = Entry_PositionName.Text;
 
 
-            string category = String.Empty;
+            string category = null;
             if (Picker_Category.SelectedItem != null)
             {
                 category = Picker_Category.Items[Picker_Category.SelectedIndex];
@@ -65,28 +65,28 @@ namespace JobSpot
             string localization = Entry_Localization.Text;
 
 
-            string positionLevel = String.Empty;
+            string positionLevel = null;
             if (Picker_PositionLevel.SelectedItem != null)
             {
                 positionLevel = Picker_PositionLevel.Items[Picker_PositionLevel.SelectedIndex];
             }
 
 
-            string contractType = String.Empty;
+            string contractType = null;
             if (Picker_ContractType.SelectedItem != null)
             {
                 contractType = Picker_ContractType.Items[Picker_ContractType.SelectedIndex];
             }
 
 
-            string employmentType = String.Empty;
+            string employmentType = null;
             if (Picker_EmploymenType.SelectedItem != null)
             {
                 employmentType = Picker_EmploymenType.Items[Picker_EmploymenType.SelectedIndex];
             }
 
 
-            string workType = String.Empty;
+            string workType = null;
             if (Picker_WorkType.SelectedItem != null)
             {
                 workType = Picker_WorkType.Items[Picker_WorkType.SelectedIndex];
@@ -102,6 +102,7 @@ namespace JobSpot
                 string.IsNullOrWhiteSpace(companyName) ||
                 string.IsNullOrWhiteSpace(positionName) ||
                 string.IsNullOrWhiteSpace(category) ||
+                string.IsNullOrWhiteSpace(localization) ||
                 string.IsNullOrWhiteSpace(pay) ||
                 string.IsNullOrWhiteSpace(contractType) ||
                 string.IsNullOrWhiteSpace(employmentType) ||

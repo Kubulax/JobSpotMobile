@@ -28,54 +28,67 @@
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="auto"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
 
                     <Label Text="Nazwa firmy:" FontFamily="arial" TextColor="Lime" FontSize="20" Grid.Row="0" Grid.Column="0" VerticalOptions="Center"/>
-                    <Label Text="{Binding CompanyName}" Grid.Row="0" Grid.Column="1" FontFamily="arial" FontSize="15" VerticalOptions="Center" Margin="0,5,0,0"/>
+                    <Label Text="{Binding CompanyName}" Grid.Row="1" FontFamily="arial" FontSize="15" VerticalOptions="Center" Margin="0,0,0,20"/>
 
-                    <Label Text="Nazwa stanowiska:" FontFamily="arial" TextColor="Lime" FontSize="20" Grid.Row="1" Grid.Column="0" VerticalOptions="Center"/>
-                    <Label Text="{Binding PositionName}" Grid.Row="1" Grid.Column="1" FontFamily="arial" FontSize="15"  VerticalOptions="Center" Margin="0,5,0,0"/>
+                    <Label Text="Nazwa stanowiska:" FontFamily="arial" TextColor="Lime" FontSize="20" Grid.Row="2" Grid.Column="0" VerticalOptions="Center"/>
+                    <Label Text="{Binding PositionName}" Grid.Row="3" FontFamily="arial" FontSize="15"  VerticalOptions="Center" Margin="0,0,0,20"/>
 
-                    <Label Text="Kategoria:" FontFamily="arial" TextColor="Lime" FontSize="20" Grid.Row="2" Grid.Column="0" VerticalOptions="Center"/>
-                    <Label Text="{Binding Category}" Grid.Row="2" Grid.Column="1" FontFamily="arial" FontSize="15" VerticalOptions="Center" Margin="0,5,0,0"/>
+                    <Label Text="Kategoria:" FontFamily="arial" TextColor="Lime" FontSize="20" Grid.Row="4" Grid.Column="0" VerticalOptions="Center"/>
+                    <Label Text="{Binding Category}" Grid.Row="5" FontFamily="arial" FontSize="15" VerticalOptions="Center" Margin="0,0,0,20"/>
 
-                    <Label Text="Wynagrodzenie:" FontFamily="arial" TextColor="Lime" FontSize="20" Grid.Row="3" Grid.Column="0" VerticalOptions="Center"/>
-                    <Label Text="{Binding Pay}" Grid.Row="3" Grid.Column="1" FontFamily="arial" FontSize="15" VerticalOptions="Center" Margin="0,5,0,0"/>
+                    <Label Text="Wynagrodzenie:" FontFamily="arial" TextColor="Lime" FontSize="20" Grid.Row="6" Grid.Column="0" VerticalOptions="Center"/>
+                    <Label Text="{Binding Pay}" Grid.Row="7" FontFamily="arial" FontSize="15" VerticalOptions="Center" Margin="0,0,0,20"/>
 
-                    <Label Text="Lokalizacja:" FontFamily="arial" TextColor="Lime" FontSize="20" Grid.Row="4" Grid.Column="0" VerticalOptions="Center"/>
-                    <Label Text="{Binding Localization}" Grid.Row="4" Grid.Column="1" FontFamily="arial" FontSize="15" VerticalOptions="Center" Margin="0,5,0,0"/>
+                    <Label Text="Lokalizacja:" FontFamily="arial" TextColor="Lime" FontSize="20" Grid.Row="8" Grid.Column="0" VerticalOptions="Center"/>
+                    <Label Text="{Binding Localization}" Grid.Row="9" FontFamily="arial" FontSize="15" VerticalOptions="Center" Margin="0,0,0,20"/>
 
-                    <Label Text="Poziom stanowiska:" FontFamily="arial" TextColor="Lime" FontSize="20" Grid.Row="5" Grid.Column="0" VerticalOptions="Center"/>
-                    <Label Text="{Binding PositionLevel}" Grid.Row="5" Grid.Column="1" FontFamily="arial" FontSize="15" VerticalOptions="Center" Margin="0,5,0,0"/>
+                    <Label Text="Poziom stanowiska:" FontFamily="arial" TextColor="Lime" FontSize="20" Grid.Row="10" Grid.Column="0" VerticalOptions="Center"/>
+                    <Label Text="{Binding PositionLevel}" Grid.Row="11" FontFamily="arial" FontSize="15" VerticalOptions="Center" Margin="0,0,0,20"/>
 
-                    <Label Text="Rodzaj umowy:" FontFamily="arial" TextColor="Lime" FontSize="20" Grid.Row="6" Grid.Column="0" VerticalOptions="Center"/>
-                    <Label Text="{Binding ContractType}" Grid.Row="6" Grid.Column="1" FontFamily="arial" FontSize="15" VerticalOptions="Center" Margin="0,5,0,0"/>
+                    <Label Text="Rodzaj umowy:" FontFamily="arial" TextColor="Lime" FontSize="20" Grid.Row="12" Grid.Column="0" VerticalOptions="Center"/>
+                    <Label Text="{Binding ContractType}" Grid.Row="13" FontFamily="arial" FontSize="15" VerticalOptions="Center" Margin="0,0,0,20"/>
 
-                    <Label Text="Wymiar etatu:" FontFamily="arial" TextColor="Lime" FontSize="20" Grid.Row="7" Grid.Column="0" VerticalOptions="Center"/>
-                    <Label Text="{Binding EmploymentType}" Grid.Row="7" Grid.Column="1" FontFamily="arial" FontSize="15" VerticalOptions="Center" Margin="0,5,0,0"/>
+                    <Label Text="Wymiar etatu:" FontFamily="arial" TextColor="Lime" FontSize="20" Grid.Row="14" Grid.Column="0" VerticalOptions="Center"/>
+                    <Label Text="{Binding EmploymentType}" Grid.Row="15" FontFamily="arial" FontSize="15" VerticalOptions="Center" Margin="0,0,0,20"/>
 
-                    <Label Text="Tryb pracy:" FontFamily="arial" TextColor="Lime" FontSize="20" Grid.Row="8" Grid.Column="0" VerticalOptions="Center"/>
-                    <Label Text="{Binding WorkType}" Grid.Row="8" Grid.Column="1" FontFamily="arial" FontSize="15" VerticalOptions="Center" Margin="0,5,0,0"/>
+                    <Label Text="Tryb pracy:" FontFamily="arial" TextColor="Lime" FontSize="20" Grid.Row="16" Grid.Column="0" VerticalOptions="Center"/>
+                    <Label Text="{Binding WorkType}" Grid.Row="17" FontFamily="arial" FontSize="15" VerticalOptions="Center" Margin="0,0,0,20"/>
 
-                    <Label Text="Obowiązki:" FontFamily="arial" TextColor="Lime" FontSize="20" Grid.Row="9" Grid.Column="0" VerticalOptions="Start" Margin="0,40,0,0"/>
-                    <Label Text="{Binding Duties}" Grid.Row="10" FontFamily="arial" FontSize="15" Margin="0,5,0,0"/>
+                    <Label Text="Obowiązki:" FontFamily="arial" TextColor="Lime" FontSize="20" Grid.Row="18" Grid.Column="0" VerticalOptions="Start"/>
+                    <Label Text="{Binding Duties}" Grid.Row="19" FontFamily="arial" FontSize="15" Margin="0,0,0,20"/>
 
-                    <Label Text="Wymagania:" FontFamily="arial" TextColor="Lime" FontSize="20" Grid.Row="11" Grid.Column="0" VerticalOptions="Start" Margin="0,40,0,0"/>
-                    <Label Text="{Binding Requirements}" Grid.Row="12" FontFamily="arial" FontSize="15" Margin="0,5,0,0"/>
+                    <Label Text="Wymagania:" FontFamily="arial" TextColor="Lime" FontSize="20" Grid.Row="20" Grid.Column="0" VerticalOptions="Start"/>
+                    <Label Text="{Binding Requirements}" Grid.Row="21" FontFamily="arial" FontSize="15" Margin="0,5,0,0"/>
 
-                    <Label Text="Korzyści:" FontFamily="arial" TextColor="Lime" FontSize="20" Grid.Row="13" Grid.Column="0" VerticalOptions="Start" Margin="0,40,0,0"/>
-                    <Label Text="{Binding Benefits}" Grid.Row="14" FontFamily="arial" FontSize="15" Margin="0,5,0,0"/>
+                    <Label Text="Korzyści:" FontFamily="arial" TextColor="Lime" FontSize="20" Grid.Row="22" Grid.Column="0" VerticalOptions="Start" Margin="0,40,0,0"/>
+                    <Label Text="{Binding Benefits}" Grid.Row="23" FontFamily="arial" FontSize="15" Margin="0,5,0,0"/>
 
-                    <Label Text="Koniec rekrutacji:" FontFamily="arial" TextColor="Lime" FontSize="20" Grid.Row="15" Grid.Column="0" VerticalOptions="Center" Margin="0,40,0,0"/>
-                    <Label Text="{Binding RecrutationEnd, StringFormat=\{0:dd.MM.yyyy\}}" Grid.Row="15" Grid.Column="1" FontFamily="arial" FontSize="15" VerticalOptions="Center" Margin="0,45,0,0"/>
+                    <Label Text="Koniec rekrutacji:" FontFamily="arial" TextColor="Lime" FontSize="20" Grid.Row="24" Grid.Column="0" VerticalOptions="Center" Margin="0,40,0,0"/>
+                    <Label Text="{Binding RecrutationEnd, StringFormat=\{0:dd.MM.yyyy\}}" Grid.Row="25" FontFamily="arial" FontSize="15" VerticalOptions="Center"/>
                 </Grid>
-                <Button x:Name="Btn_EditJobAd" Clicked="EditJobAd" Text="EDYTUJ OGŁOSZENIE" Grid.Row="16" FontFamily="arial" FontAttributes="Bold, Italic" BackgroundColor="Lime" FontSize="20" HeightRequest="50" Padding="5" IsEnabled="False" IsVisible="false" Margin="10,0,0,20" HorizontalOptions="Center"/>
-                <Button x:Name="Btn_DeleteJobAd" Clicked="DeleteJobAd" Text="USUŃ OGŁOSZENIE" Grid.Row="17" FontFamily="arial" FontAttributes="Bold, Italic" BackgroundColor="Lime" FontSize="20" HeightRequest="50" Padding="5" IsEnabled="False" IsVisible="false" Margin="10,0,0,100" HorizontalOptions="Center"/>
-                <Button x:Name="Btn_Apply" Clicked="Apply" Text="APLIKUJ" Grid.Row="18" FontFamily="arial" FontAttributes="Bold, Italic" BackgroundColor="Lime" FontSize="20" HeightRequest="50" Padding="5" Margin="10,0,0,80" HorizontalOptions="Center"/>
+                <Button x:Name="Btn_EditJobAd" Clicked="EditJobAd" Text="EDYTUJ OGŁOSZENIE" Grid.Row="26" FontFamily="arial" FontAttributes="Bold, Italic" BackgroundColor="Lime" FontSize="20" HeightRequest="50" Padding="5" IsEnabled="False" IsVisible="false" Margin="10,0,0,20" HorizontalOptions="Center"/>
+                <Button x:Name="Btn_DeleteJobAd" Clicked="DeleteJobAd" Text="USUŃ OGŁOSZENIE" Grid.Row="27" FontFamily="arial" FontAttributes="Bold, Italic" BackgroundColor="Lime" FontSize="20" HeightRequest="50" Padding="5" IsEnabled="False" IsVisible="false" Margin="10,0,0,100" HorizontalOptions="Center"/>
+                <Button x:Name="Btn_Apply" Clicked="Apply" Text="APLIKUJ" Grid.Row="28" FontFamily="arial" FontAttributes="Bold, Italic" BackgroundColor="Lime" FontSize="20" HeightRequest="50" Padding="5" Margin="10,0,0,80" HorizontalOptions="Center"/>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
